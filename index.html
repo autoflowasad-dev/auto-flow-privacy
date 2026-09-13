@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Flow — batch prompts for Google Flow</title>
+<meta name="description" content="Auto Flow runs your whole prompt list on Google Flow and saves every result with a numbered file name. Support and help page.">
+<style>
+ :root{--night:#151a2e;--deck:#1d2440;--mari:#f2a93b;--ink:#eef0fa;--haze:#a3abcf;--rule:#323c68}
+ *{box-sizing:border-box}
+ body{margin:0;background:var(--night);color:var(--ink);font:16px/1.65 system-ui,Segoe UI,Roboto,sans-serif}
+ .wrap{max-width:46rem;margin:0 auto;padding:0 1.2rem 4rem}
+ .stripes{height:12px;background:repeating-linear-gradient(-55deg,var(--mari) 0 14px,var(--night) 14px 28px)}
+ header{padding:2.6rem 0 1.2rem}
+ h1{font-size:2rem;margin:0 0 .3rem}
+ .tag{color:var(--mari);font-weight:600;margin:0 0 1rem}
+ h2{font-size:1.15rem;margin:2.2rem 0 .6rem;color:var(--mari)}
+ p,li{color:#dfe3f5}
+ .muted{color:var(--haze)}
+ .card{background:var(--deck);border:1px solid var(--rule);border-radius:12px;padding:1rem 1.2rem;margin:1rem 0}
+ a{color:var(--mari)}
+ code{background:#222a4a;padding:.1rem .35rem;border-radius:5px;font-size:.92em}
+ ol,ul{padding-left:1.2rem}
+ footer{border-top:1px solid var(--rule);margin-top:3rem;padding-top:1.2rem;color:var(--haze);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="stripes"></div>
+<div class="wrap">
+
+<header>
+  <h1>Auto Flow</h1>
+  <p class="tag">batch prompts for Google Flow</p>
+  <p>Auto Flow runs your whole prompt list on Google Flow while you do something else. Paste your prompts, press Start, and each result is saved to your Downloads folder with a numbered file name — <code>001.mp4</code>, <code>002.mp4</code>, <code>003.mp4</code> — so a long series stays in order.</p>
+  <p class="muted">Made by Muhammad Asad. Not made by, affiliated with or endorsed by Google LLC. “Google Flow” is a trademark of Google LLC.</p>
+</header>
+
+<h2>Getting started</h2>
+<ol>
+  <li>Open your Google Flow project in a tab.</li>
+  <li>Open the Auto Flow side panel (toolbar icon, or <code>Alt+Shift+F</code>).</li>
+  <li>Paste your prompts, or import a <code>.txt</code> / <code>.csv</code> file.</li>
+  <li>Under <strong>Flow settings</strong> choose the model, aspect ratio, clip length and results per prompt. “Keep” leaves Flow as it is.</li>
+  <li>Press <strong>Start</strong>.</li>
+</ol>
+
+<h2>Reference pictures</h2>
+<p>Open the <strong>Pictures</strong> tab and add your character or location images. Then choose how they are matched:</p>
+<ul>
+  <li><strong>In list order</strong> — 1st picture goes with the 1st prompt, 2nd with the 2nd, and so on.</li>
+  <li><strong>By the number in the file name</strong> — <code>026.jpg</code> goes with Prompt 26.</li>
+  <li><strong>Every prompt</strong> — tick a picture to use it in all prompts.</li>
+  <li>Inside a prompt: <code>[REF: hero.jpg]</code>, frames <code>[START: a.png]</code> <code>[END: b.png]</code>, and <code>[SETTINGS: 9:16, 10s, x2]</code> for that prompt only.</li>
+</ul>
+
+<h2>Free trial</h2>
+<p>The first 20 prompts are free. After that, enter an e-mail address once in the panel to keep using it — no password and no verification e-mail. Your prompt list is never lost when the trial ends.</p>
+
+<h2>Common questions</h2>
+<div class="card">
+  <p><strong>Auto Flow says “Open Google Flow in this tab”.</strong><br>Click that button — it loads Flow in the current tab. Auto Flow only works on a Google Flow page.</p>
+  <p><strong>Nothing happens when a prompt is sent.</strong><br>Open Settings → Flow page → <strong>Check page</strong>. The prompt box should be highlighted green and the Generate button blue. If not, use the <strong>Pick</strong> buttons.</p>
+  <p><strong>A file was not saved.</strong><br>After the run press <strong>Save missing files</strong> with the same Flow project open. The Activity tab always shows the reason.</p>
+  <p><strong>The run stopped by itself.</strong><br>Flow reported a credit or rate limit, or the page was reloaded. Your list is kept — press <strong>Resume</strong>.</p>
+  <p><strong>Google Flow changed and a step broke.</strong><br>Settings → Teach Auto Flow → <strong>Record Flow clicks</strong>, do that step once by hand, press Stop, and e-mail the saved file to the address below.</p>
+</div>
+
+<h2>Support</h2>
+<p>Questions, problems, bug reports or a request to delete your e-mail address from our records:<br>
+<a href="mailto:autoflow.asad@gmail.com"><strong>autoflow.asad@gmail.com</strong></a></p>
+
+<h2>Privacy</h2>
+<p>Your prompts, reference pictures, settings and generated files stay on your own computer. No ads, no third-party analytics, nothing sold or shared. Only your activation e-mail address and the daily count of prompts you ran are sent to the developer, and Chrome asks your permission first.</p>
+<p><a href="privacy-policy.html">Read the full privacy policy →</a></p>
+
+<footer>
+  © 2026 Muhammad Asad. Auto Flow is a personal project; Google Flow is a service of Google LLC.
+</footer>
+</div>
+</body>
+</html>
