@@ -12,11 +12,11 @@
 </head>
 <body>
 <h1>Privacy Policy — Auto Flow</h1>
-<p class="date">Extension: “Auto Flow — batch prompts for Google Flow”. Developer: Muhammad Asad. Last updated: 12 September 2026.</p>
+<p class="date">Extension: “Auto Flow — batch prompts for Google Flow”. Developer: Muhammad Asad. Last updated: 14 September 2026.</p>
 
 <h2>Short version</h2>
 <p>Your prompts, your reference pictures, your settings and the videos or images you generate never leave your computer. Auto Flow has no user accounts, no advertising and no third-party analytics, and nothing is ever sold or shared.</p>
-<p>Two things do leave your computer, and only after you choose to continue past the free trial: <strong>the e-mail address you type</strong>, and <strong>daily counts of how many prompts you ran</strong>. Both go to the developer's own Google Sheet, Chrome asks your permission first, and both are described in detail below.</p>
+<p>Three things do leave your computer, and only after you choose to continue past the free trial: <strong>the e-mail address you type</strong>, <strong>daily counts of how many prompts you ran</strong>, and <strong>the error messages Auto Flow showed you</strong> (never the prompts themselves). They go to the developer's own Google Sheet and are described in detail below.</p>
 
 <h2>What the extension stores, and where</h2>
 <ul>
@@ -29,8 +29,8 @@
 <h2>The e-mail you enter to activate</h2>
 <p>Auto Flow is free for the first 20 prompts. To continue, you enter an e-mail address once.</p>
 <ul>
-  <li><strong>What is sent:</strong> the e-mail address you type, a random install id generated on your computer, the extension version, and the date.</li>
-  <li><strong>Where it goes:</strong> to the developer's own Google Sheet, through a Google Apps Script endpoint at <code>script.google.com</code>. Chrome asks your permission before the first send; if you decline, the extension still unlocks and nothing is sent.</li>
+  <li><strong>What is sent:</strong> the e-mail address you type, a random install id generated on your computer, the extension version, the date, and your browser's time zone and language (for example “Asia/Karachi”, “en-GB”) so the developer knows roughly which regions use Auto Flow. No IP-based location, no GPS.</li>
+  <li><strong>Where it goes:</strong> to the developer's own Google Sheet, through a Google Apps Script endpoint at <code>script.google.com</code>. This is listed in the extension's permissions at install time.</li>
   <li><strong>Why:</strong> to know who is using Auto Flow and to be able to contact you about updates or problems.</li>
   <li><strong>What is not sent:</strong> your prompts, your pictures, your generated videos or images, your settings, your Google account details, or anything from other websites.</li>
   <li><strong>Sharing:</strong> the address is not sold, rented or shared with anyone else, and is not used for advertising.</li>
@@ -42,10 +42,18 @@
 <p>Auto Flow counts how many prompts you sent to Google Flow and how many files it saved, per day. You can see these numbers yourself under Settings → Your usage.</p>
 <ul>
   <li><strong>What is sent, once activated:</strong> for each finished day, the date and two numbers (prompts sent, files saved), together with your activation e-mail, the install id and the extension version. The current day is never sent while it is still running.</li>
-  <li><strong>Where it goes:</strong> the same Google Sheet as the activation, through <code>script.google.com</code>, and only if you allowed that when you activated.</li>
+  <li><strong>Where it goes:</strong> the same Google Sheet as the activation, through <code>script.google.com</code>.</li>
   <li><strong>Why:</strong> so the developer knows how much Auto Flow is actually used and can plan updates.</li>
   <li><strong>What is never sent:</strong> your prompt text, your reference pictures, your generated videos or images, file names, your settings, or anything about other websites you visit.</li>
   <li><strong>Before activation</strong> (the free trial) nothing is sent at all.</li>
+</ul>
+
+<h2>Error reports</h2>
+<p>When something fails during a run — Flow refuses a prompt, a file cannot be saved, a setting cannot be applied — Auto Flow shows you the reason in its Activity list. Once you have activated, those messages are also sent with the usage report, so the developer can fix what is breaking.</p>
+<ul>
+  <li><strong>What is sent:</strong> the message itself (for example “Flow showed: limit reached”, “013.mp4 NOT saved — the result is no longer on the page”), the prompt's number in your list, the date and the extension version.</li>
+  <li><strong>What is never sent:</strong> the text of your prompts, your reference pictures, your generated videos or images, or your file contents. Only the number of the prompt is included, never its wording.</li>
+  <li>At most 20 recent messages are sent with a report, and nothing is sent during the free trial.</li>
 </ul>
 
 <h2>Network activity</h2>
