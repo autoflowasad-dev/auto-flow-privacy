@@ -3,87 +3,110 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Auto Flow — Privacy Policy</title>
+<title>AutoFlow: Veo AI Video Batch for Google Flow — Privacy Policy</title>
 <style>
- body{max-width:44rem;margin:2.5rem auto;padding:0 1.2rem;font:16px/1.6 system-ui,Segoe UI,Roboto,sans-serif;color:#1b1d24;background:#fff}
- h1{font-size:1.7rem;margin-bottom:.2rem} h2{font-size:1.15rem;margin-top:2rem}
- .date{color:#666;font-size:.9rem} li{margin:.3rem 0} code{background:#f2f3f7;padding:.1rem .3rem;border-radius:4px}
+ body{max-width:46rem;margin:2rem auto;padding:0 1.2rem;font:16px/1.65 system-ui,Segoe UI,Roboto,sans-serif;color:#1b1d24;background:#fff}
+ h1{font-size:1.8rem;margin-bottom:.2rem;color:#111} 
+ h2{font-size:1.2rem;margin-top:2.2rem;color:#0b57d0;border-bottom:1px solid #eee;padding-bottom:.3rem}
+ .date{color:#666;font-size:.9rem} 
+ li{margin:.4rem 0} 
+ code{background:#f2f3f7;padding:.12rem .35rem;border-radius:4px;color:#b3261e;font-size:.92em}
+ a{color:#0b57d0;text-decoration:underline}
+ a:hover{color:#083b8d}
+ 
+ /* Top Bar */
+ .top-bar{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0;border-bottom:1px solid #eee;margin-bottom:1.5rem;flex-wrap:wrap;gap:.8rem}
+ .home-link{font-weight:700;color:#0b57d0;text-decoration:none}
+ .lang-container{display:flex;align-items:center;gap:.5rem}
+ #google_translate_element select{background:#fff;color:#111;border:1px solid #ccc;padding:.35rem .6rem;border-radius:6px;font-size:.88rem;cursor:pointer}
+ .goog-te-banner-frame.skiptranslate{display:none!important}
+ body{top:0!important}
+ .box{background:#f8f9fc;border:1px solid #e1e4ed;border-radius:8px;padding:1rem 1.2rem;margin:1rem 0}
 </style>
 </head>
 <body>
-<h1>Privacy Policy — Auto Flow</h1>
-<p class="date">Extension: “Auto Flow — batch prompts for Google Flow”. Developer: Muhammad Asad. Last updated: 14 September 2026.</p>
 
-<h2>Short version</h2>
-<p>Your prompts, your reference pictures, your settings and the videos or images you generate never leave your computer. Auto Flow has no user accounts, no advertising and no third-party analytics, and nothing is ever sold or shared.</p>
-<p>Three things do leave your computer, and only after you choose to continue past the free trial: <strong>the e-mail address you type</strong>, <strong>daily counts of how many prompts you ran</strong>, and <strong>the error messages Auto Flow showed you</strong> (never the prompts themselves). They go to the developer's own Google Sheet and are described in detail below.</p>
+<div class="top-bar">
+  <a href="index.html" class="home-link">← Back to AutoFlow Home</a>
+  <div class="lang-container">
+    <span style="font-size:.9rem;color:#555">🌐 Translate Page:</span>
+    <div id="google_translate_element"></div>
+  </div>
+</div>
 
-<h2>What the extension stores, and where</h2>
+<h1>Privacy Policy — AutoFlow: Veo AI Video Batch for Google Flow</h1>
+<p class="date">Extension: “AutoFlow: Veo AI Video Batch for Google Flow”. Developer: Muhammad Asad. Version: 2.15.2. Last updated: 28 September 2026.</p>
+
+<div class="box">
+  <p style="margin:0;font-weight:600">Short Summary: Your reference pictures, custom settings, character images, and the videos or pictures generated inside Google Flow never leave your computer. Auto Flow contains zero ads, no subscriptions, and no third-party tracking networks.</p>
+</div>
+
+<h2>Free Trial (First 100 Uses)</h2>
+<p>During your <strong>first 100 prompt runs or downloads</strong> (the free trial), nothing is ever transmitted from your computer. If you choose to unlock Auto Flow after the trial and tick “I agree”, the extension communicates with the developer's secure Google Apps Script backend to maintain automation compatibility with Google Flow updates.</p>
+
+<h2>Data Stored Locally on Your Computer</h2>
 <ul>
-  <li><strong>Your prompts, run progress and activity log</strong> — stored locally with <code>chrome.storage.local</code> so a run can be paused, resumed and reviewed.</li>
-  <li><strong>Your settings</strong> (folder name, file-name prefix, model, aspect ratio, clip length, download quality, delays) — stored locally.</li>
-  <li><strong>Reference pictures you add</strong> — stored locally so they can be attached to prompts and, when needed, uploaded to your own Google Flow project by you through the extension.</li>
+  <li><strong>Your prompts, run progress, and activity logs</strong> — stored locally in Chrome storage (<code>chrome.storage.local</code>) so runs can be paused, resumed, and inspected.</li>
+  <li><strong>Your settings</strong> — folder names, file prefix, model selections, aspect ratios, clip lengths, and download choices are stored strictly locally on your machine.</li>
+  <li><strong>Character Profiles &amp; Images</strong> — character names, avatars, and descriptions scanned from your Flow projects remain on your computer and are only uploaded to Google Flow projects by your explicit command.</li>
 </ul>
-<p>Nothing in the list above is ever sent anywhere. You can delete all of it at any time by removing the extension, or by using “Reset all settings” and “Clear list” inside the extension.</p>
+<p>You can erase all locally stored data at any time by uninstalling the extension or clicking “Reset all settings” inside the panel.</p>
 
-<h2>The e-mail you enter to activate</h2>
-<p>Auto Flow is free for the first 20 prompts. To continue, you enter an e-mail address once.</p>
+<h2>Activation &amp; Account Information</h2>
+<p>Auto Flow is free for the first 100 uses. To unlock it after the trial, you provide your contact details once:</p>
 <ul>
-  <li><strong>What is sent:</strong> the e-mail address you type, a random install id generated on your computer, the extension version, the date, and your browser's time zone and language (for example “Asia/Karachi”, “en-GB”) so the developer knows roughly which regions use Auto Flow. No IP-based location, no GPS.</li>
-  <li><strong>Where it goes:</strong> to the developer's own Google Sheet, through a Google Apps Script endpoint at <code>script.google.com</code>. This is listed in the extension's permissions at install time.</li>
-  <li><strong>Why:</strong> to know who is using Auto Flow and to be able to contact you about updates or problems.</li>
-  <li><strong>What is not sent:</strong> your prompts, your pictures, your generated videos or images, your settings, your Google account details, or anything from other websites.</li>
-  <li><strong>Sharing:</strong> the address is not sold, rented or shared with anyone else, and is not used for advertising.</li>
-  <li><strong>How long:</strong> it is kept while the extension is in use. To have it removed, e-mail the address in the Contact section and it will be deleted from the sheet.</li>
-  <li><strong>On your computer:</strong> the same address is stored locally so the extension knows it is activated. Removing the extension removes that copy.</li>
-</ul>
-
-<h2>Usage counts</h2>
-<p>Auto Flow counts how many prompts you sent to Google Flow and how many files it saved, per day. You can see these numbers yourself under Settings → Your usage.</p>
-<ul>
-  <li><strong>What is sent, once activated:</strong> for each finished day, the date and two numbers (prompts sent, files saved), together with your activation e-mail, the install id and the extension version. The current day is never sent while it is still running.</li>
-  <li><strong>Where it goes:</strong> the same Google Sheet as the activation, through <code>script.google.com</code>.</li>
-  <li><strong>Why:</strong> so the developer knows how much Auto Flow is actually used and can plan updates.</li>
-  <li><strong>What is never sent:</strong> your prompt text, your reference pictures, your generated videos or images, file names, your settings, or anything about other websites you visit.</li>
-  <li><strong>Before activation</strong> (the free trial) nothing is sent at all.</li>
-</ul>
-
-<h2>Error reports</h2>
-<p>When something fails during a run — Flow refuses a prompt, a file cannot be saved, a setting cannot be applied — Auto Flow shows you the reason in its Activity list. Once you have activated, those messages are also sent with the usage report, so the developer can fix what is breaking.</p>
-<ul>
-  <li><strong>What is sent:</strong> the message itself (for example “Flow showed: limit reached”, “013.mp4 NOT saved — the result is no longer on the page”), the prompt's number in your list, the date and the extension version.</li>
-  <li><strong>What is never sent:</strong> the text of your prompts, your reference pictures, your generated videos or images, or your file contents. Only the number of the prompt is included, never its wording.</li>
-  <li>At most 20 recent messages are sent with a report, and nothing is sent during the free trial.</li>
+  <li><strong>What is sent upon activation:</strong> the email address you provide, your optional WhatsApp number, a random local install ID, extension version, and your browser's time zone and language (e.g. “Asia/Karachi”, “en-GB”) to gauge regional usage. No IP geolocation or GPS tracking is performed.</li>
+  <li><strong>Where it goes:</strong> transmitted securely via HTTPS to the developer's Google Apps Script web app (<code>script.google.com</code>).</li>
+  <li><strong>Purpose:</strong> to recognize activated users, offer direct technical support, and notify users of critical Flow compatibility patches.</li>
+  <li><strong>Data Deletion:</strong> to delete your contact details and records from our sheet, email <a href="mailto:autoflow.asad@gmail.com">autoflow.asad@gmail.com</a> and your information will be deleted immediately.</li>
 </ul>
 
-<h2>Network activity</h2>
-<p>Apart from the activation and usage requests described above, the extension makes no network requests of its own. It acts inside the Google Flow page (<code>flow.google.com</code>, <code>labs.google</code>) that you have already opened and signed into, in the same way you would by clicking there yourself. Files are saved with Chrome’s own downloads feature to your Downloads folder. There is no telemetry, no crash reporting and no advertising network.</p>
-
-<h2>Data we do not handle</h2>
-<p>Auto Flow does not read or store your Google account credentials, your mailbox, your browsing history, or any data from other websites. Apart from the one-time activation request described above, it has no access to any site other than Google Flow.</p>
-
-<h2>The debugger permission</h2>
-<p>Auto Flow declares Chrome's <code>debugger</code> permission because Google Flow's prompt box sometimes refuses ordinary typing. If you switch Settings → Flow page → Typing (or Generate) to a “Debugger” option, keystrokes and clicks are sent to your Flow tab that way, and only while a run is active; Chrome shows a “started debugging this browser” bar during that time and the connection is closed when the run ends. Nothing on the page is read, stored or transmitted. Chrome does not allow this permission to be optional, so it appears in the install list even if you never switch those options on.</p>
-
-<h2>Optional permissions</h2>
+<h2>Usage Counts &amp; Diagnostics</h2>
+<p>Auto Flow tallies daily counts of generated prompts, completed downloads, and error codes (visible to you under Settings → Your usage):</p>
 <ul>
-  <li><strong>power</strong> — only if you tick “Keep the computer awake while a run is going”.</li>
-  <li><strong>notifications</strong> — only if you tick “Show a notification when a run ends”.</li>
+  <li><strong>What is sent (after activation and agreement):</strong> daily aggregated numbers (prompts submitted, files saved), recent error messages encountered on Google Flow, and prompt text snippets (up to 2,000 characters) along with the Flow model settings used.</li>
+  <li><strong>Why:</strong> Google Flow frequently updates its internal button structures and classes. Prompt and error logs allow the developer to quickly adapt element selectors so your workflows do not break.</li>
+  <li><strong>What is never sent:</strong> your personal files, Google account passwords, session cookies, payment info, or data from any other website.</li>
 </ul>
-<p>Chrome asks you before granting any of these, and you can revoke them at any time on <code>chrome://extensions</code>.</p>
 
-<h2>The “Record Flow clicks” tool</h2>
-<p>This optional troubleshooting tool writes a file to your Downloads folder describing which buttons were clicked on the Flow page, so a broken step can be diagnosed. It deliberately excludes your prompt text, media links and e-mail addresses. The file is never uploaded; you decide whether to share it.</p>
+<h2>Permissions Declared in Manifest</h2>
+<ul>
+  <li><code>storage</code> &amp; <code>unlimitedStorage</code> — to save your prompts, settings, and character data locally in your browser.</li>
+  <li><code>sidePanel</code> — to display the Auto Flow interface alongside Google Flow.</li>
+  <li><code>downloads</code> — to save generated videos and pictures directly into your Downloads directory.</li>
+  <li><code>scripting</code> — to automate clicks, typing, and model switching within Google Flow.</li>
+</ul>
+
+<h2>Optional Permissions</h2>
+<ul>
+  <li><strong>debugger (Optional)</strong> — Auto Flow does <em>not</em> require debugger permission by default. All standard automation uses native browser events without any warning banner. If you choose Settings → Flow page → Typing → “Debugger”, Chrome will ask you to approve this optional permission. It is active strictly while generating and never reads data outside your Flow tab.</li>
+  <li><strong>power (Optional)</strong> — only requested if you enable “Keep computer awake while a run is going”.</li>
+  <li><strong>notifications (Optional)</strong> — only requested if you enable “Show a notification when a run ends”.</li>
+</ul>
+
+<h2>The “Record Flow clicks” Tool</h2>
+<p>This optional diagnostic tool records which buttons were clicked on the Flow page to troubleshoot UI changes. It deliberately strips all prompt text, images, and email addresses. The resulting file is saved locally to your Downloads folder; you decide whether to send it to support.</p>
 
 <h2>Children</h2>
-<p>Auto Flow is not directed at children under 13.</p>
+<p>Auto Flow is not directed at children under the age of 13.</p>
 
-<h2>Changes</h2>
-<p>If this policy changes, the updated version will be published at this address and the date above will change.</p>
+<h2>Contact &amp; Support</h2>
+<p>If you have any questions about this Privacy Policy or wish to have your records removed:<br>
+Email: <a href="mailto:autoflow.asad@gmail.com"><strong>autoflow.asad@gmail.com</strong></a><br>
+WhatsApp Support: <strong>+92 311 6730583</strong></p>
 
-<h2>Contact</h2>
-<p>Questions about this policy, or to have your e-mail address removed from the developer's records: <a href="mailto:autoflow.asad@gmail.com"><strong>autoflow.asad@gmail.com</strong></a>.</p>
+<p style="margin-top:2.5rem;color:#777;font-size:.88rem">AutoFlow is an independent productivity extension created by Muhammad Asad. It is not affiliated with, endorsed by, or sponsored by Google LLC. “Google Flow” is a trademark of Google LLC.</p>
 
-<p style="margin-top:2rem;color:#666;font-size:.9rem">Auto Flow is not made by, affiliated with or endorsed by Google LLC. “Google Flow” is a trademark of Google LLC.</p>
+<!-- Google Translate Integration -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
